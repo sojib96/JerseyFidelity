@@ -125,9 +125,9 @@ MEDIA_ROOT = BASE_DIR / 'media'
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = '/profile/'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-# EMAI_USE_TLS = True
-# EMAIL_HOST = "smtb.gmail.com"
-# EMAIL_HOST_USER = "gsciansaimon@gmail.com"
-# EMAIL_HOST_PASSWORD = "ombprwibzibhwwwp"
-# EMAIL_PORT = 587
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIl_USE_TLS = True
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER = "gsciansaimon@gmail.com"
+EMAIL_HOST_PASSWORD = "ombprwibzibhwwwp"
+EMAIL_PORT = 587
